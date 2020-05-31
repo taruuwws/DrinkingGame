@@ -4,42 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".EnOleKoskaan">
 
-    <Button
-        android:id="@+id/enolekoskaanBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="goNeverHaveIEver"
-        android:text="En ole koskaan"
+    <TextView
+        android:id="@+id/kysymys"
+        android:layout_width="293dp"
+        android:layout_height="257dp"
+        android:textColor="#000000"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintVertical_bias="0.383" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Juomapelejä"
+        android:text="EN OLE KOSKAAN..."
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <Button
-        android:id="@+id/pullonpyoritysBtn"
+        android:id="@+id/seuraavaBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="goSpinTheBottle"
-        android:text="Pullonpyöritys"
+        android:onClick="NextQuestion"
+        android:text="SEURAAVA KYSYMYS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintVertical_bias="0.806" />
 </androidx.constraintlayout.widget.ConstraintLayout>
